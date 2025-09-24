@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+
+  themes: light --default, dark --prefersdark;
+
+}
+
+:root:has(input.theme-controller[value="light"]:checked) {
+  .btn-home {
+    color: oklch(92% 0.004 286.32);
+    background-color: #000;
+  }
+  .btn-home:hover {
+    color: #111;
+    background-color: #aee6ec;
+    border-color: #c6c7c8;
+  }
+}
+:root:has(input.theme-controller[value="dark"]:checked) {
+  .btn-home {
+    color: #111;
+    background-color: #fff;
+  }
+  .btn-home:hover {
+    color: #111;
+    background-color: #aee6ec;
+    border-color: #c6c7c8;
+  }
+}
+
+
+.d-flex-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1023px) {
+  .big-letter {
+    font-size: 4.5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+  }
+
+  .home-title {
+    font-size: 5.5rem;
+    line-height: 11rem;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .big-letter {
+    font-size: 2.5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+  }
+
+  .home-title {
+    font-size: 3.5rem;
+    line-height: 7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .big-letter {
+    font-size: 2.2rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+  }
+
+  .home-title {
+    font-size: 3.5rem;
+    line-height: 7rem;
+  }
+}
+
+.med-letter {
+  font-size: 1rem;
+  color: #f8f9fa;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+}

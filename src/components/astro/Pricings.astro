@@ -1,0 +1,353 @@
+---
+import getMessage from "@i18n/translation";
+import { getLangFromUrl, useTranslatedPath } from "@i18n/utils";
+import "@css/pricing.css";
+//import "@css/club.css";
+
+//import Pricing from "@components/solidjs/pricing/Pricing";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<>
+	<svg
+		version="2.0"
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 512 512"
+		class="fill-customSecondary d-none"
+	>
+		<path
+			id="svgarrow"
+			d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+		>
+		</path>
+	</svg>
+
+	<section id="pricing" class="pricing-bg-color">
+		<div class="px-vw-5 py-vh-3 rounded-5 shadow">
+
+			<div class="flex justify-center items-center flex-wrap">
+				<h1 class="mt-2 mb-2" style="background-color: rgb(38 39 43);">
+					Pricing
+				</h1>
+			</div>
+
+			<div class="flex fx-wrap mt-5 justify-center" style="gap: 1rem;">
+				<div class="tile mt-1 mb-auto">
+					<h4>Open source</h4>
+					<div class="cont-price-year">
+						<div class="price-amount">0€</div>
+						<div>/ year</div>
+					</div>
+					<p class="tile-desc mb-4 mt-4">
+						Host sbomking yourself
+					</p>
+					<div class="ml-1 mb-2">
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Vulnerable dependency scanner
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Policies
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Open source licensing
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Components and relationships
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Architecture and threat modeling
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customThirdary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words">Selfhosted</span>
+						</li>
+					</div>
+
+					<div class="flex flex-col">
+    					<button
+    						type="button"
+    						class="btn btn-primary mb-1 mt-1"
+    					>
+    						In construction...
+    					</button>
+					</div>
+				</div>
+
+				<div class="tile mt-1 mb-auto">
+					<h4>Software As A Service</h4>
+					<div class="cont-price-year">
+						<div class="price-amount">500€</div>
+						<div>/ year</div>
+					</div>
+					<p class="tile-desc mb-4 mt-4">
+						We host sbomking for you
+					</p>
+					<div class="ml-1 mb-2">
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Vulnerable dependency scanner
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Policies
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Open source licensing
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Components and relationships
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Architecture and threat modeling
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Clear pricing, no surprise
+							</span>
+						</li>
+					</div>
+
+					<div class="flex flex-col">
+    					<button
+    						type="button"
+    						class="btn btn-primary mb-1 mt-1"
+    					>
+							In construction...
+    					</button>
+					</div>
+				</div>
+
+				<div class="tile mt-1 mb-auto">
+					<h4>Selfhosted with enterprise support</h4>
+					<div class="cont-price-year">
+						<div class="price-amount">1000€</div>
+						<div>/ year</div>
+					</div>
+					<p class="tile-desc mb-4 mt-4">
+						For enterprise
+					</p>
+					<div class="ml-1 mb-2">
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Vulnerable dependency scanner
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Policies
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Open source licensing
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Components and relationships
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Architecture and threat modeling
+							</span>
+						</li>
+						<li class="mb-4 flex">
+							<div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									class="fill-customSecondary"
+								>
+									<use href="#svgarrow"></use>
+								</svg>
+							</div>
+							<span class="break-words"
+								>Enterprise support
+							</span>
+						</li>
+					</div>
+
+					<div class="flex flex-col">
+    					<a class="btn btn-primary mb-1 mt-1" href={translatePath('/create_club/')} role="button">
+    						<span class="icon-plus"></span> In construction...
+    					</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+</>

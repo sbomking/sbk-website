@@ -1,0 +1,140 @@
+@use "tailwindcss";
+@plugin "daisyui" {
+
+  themes: light --default, dark --prefersdark;
+
+}
+
+:root {
+  --bs-body-bg: #1c1b22;
+  --bs-body-color: #fff;
+  --bs-headings-color: #aee6ec;
+}
+
+.cont-price-year {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.d-none {
+  display: none;
+}
+
+.fill-customSecondary {
+  fill: var(--bs-headings-color);
+  height: 20px;
+  margin-right: 1em;
+  max-width: 20px;
+  width: 20px;
+}
+
+.fill-customThirdary {
+  fill: #ff0000;
+  height: 20px;
+  margin-right: 1em;
+  max-width: 20px;
+  width: 20px;
+}
+
+.price-amount {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.pricing-bg-color {
+  background-color: #26272b;
+}
+
+.tile {
+  background-color: #303136;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin-top: 1em;
+}
+
+.tile-container {
+  background-color: #303136;
+  border-radius: 1.5rem;
+  margin-right: 1em;
+}
+
+.tile-desc {
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  line-height: 2;
+  text-align: left;
+}
+
+.tile-content {
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.tile-title {
+  padding: 2em;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tile-americano-title {
+  background: linear-gradient(40deg, rgb(5, 150, 105) 30%, rgb(4, 120, 87));
+}
+
+.tile-challenge-title {
+  background: linear-gradient(40deg, #1a2740 30%, #141e30);
+}
+.tile-remontada-title {
+  background: linear-gradient(40deg, #2c5364 30%, #203a43);
+}
+.tile-custom-title {
+  background: linear-gradient(40deg, rgb(5, 109, 150) 30%, rgb(4, 82, 120));
+}
+
+.tile-timetable-title {
+  background: linear-gradient(40deg, rgb(5, 150, 130) 30%, rgb(4, 120, 109));
+}
+
+
+.border-top {
+  /*border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;*/
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.px-vw-5 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+*.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.rounded-5 {
+  border-radius: 2rem !important;
+  /*border-radius: var(--bs-border-radius-xxl) !important;*/
+}
+
+.py-vh-3 {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.shadow {
+  box-shadow: 0 1rem 3rem rgba(17, 17, 17, 0.5) !important;
+}
